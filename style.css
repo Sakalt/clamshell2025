@@ -9,20 +9,34 @@ body {
 }
 
 #clamshell {
-    width: 80%;
-    max-width: 1000px;
+    width: 90%;
+    max-width: 1200px;
     background-color: #add8e6; /* 水色 */
     border-radius: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#top-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 #screen {
     background-color: #000;
-    height: 60%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    height: 400px;
+    width: 100%;
     overflow: hidden;
+}
+
+#water-section {
+    background-color: #00BFFF; /* より濃い水色 */
+    height: 20px;
+    width: 100%;
 }
 
 #iframe-display {
@@ -33,11 +47,10 @@ body {
 #keyboard {
     background-color: #ccc;
     padding: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     gap: 10px;
+    width: 100%;
 }
 
 .key {
@@ -45,8 +58,9 @@ body {
     border: none;
     border-radius: 5px;
     padding: 15px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     cursor: pointer;
+    text-align: center;
 }
 
 .key:hover {
